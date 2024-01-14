@@ -1,0 +1,32 @@
+.app__header {
+    background-color: var(--color-black);
+    @media (min-width: 992px) {
+        display: flex;
+    }
+}
+
+.app__header--h1 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 64px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 130%;
+    @media (min-width: 992px) {
+        font-size: 96px;
+    }
+}
+
+.app__header--p {
+    text-transform: unset!important;
+}
+
+.header__wrapper--top {
+    margin-block: 0.5rem;
+}
+
+.header__wrapper--bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

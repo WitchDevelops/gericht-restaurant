@@ -28,11 +28,11 @@ const Navbar = () => {
       </div>
       {/* mobile navigation */}
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu className="app__navbar-smallscreen_burger" color="#FFF" fontsize={27} onClick={() => { setToggleMenu(true) }} />
+        <GiHamburgerMenu className="app__navbar-smallscreen_burger" color="#FFF" fontSize={27} onClick={() => { setToggleMenu(true) }} />
         {
           toggleMenu && (
             <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-              <MdOutlineRestaurantMenu fontsize={27} className="overlay__close" onClick={() => { setToggleMenu(false) }} />
+              <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => { setToggleMenu(false) }} />
               <ul className="app__navbar-smallscreen_links">
                 <li><a href="#home" className="p__opensans">Home</a></li>
                 <li><a href="#about" className="p__opensans">About</a></li>

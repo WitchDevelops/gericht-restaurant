@@ -73,6 +73,11 @@
 }
 .app__navbar-smallscreen_burger {
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 27px;
+  fill: var(--color-golden);
 }
 .app__navbar-smallscreen_links {
   list-style: none;
