@@ -1,11 +1,10 @@
-import React from 'react';
 import { Subheading } from '../../components';
 import { images } from '../../constants';
 import './Header.css';
 
 const Header = () => {
   return (
-    <div className="app__header app__wrapper section__padding" id="home">
+    <section className="app__header app__wrapper section__padding" id="home">
       <div className="app__wrapper_info">
         <div className="header__wrapper--top">
           <Subheading title="Chase the new flavor" />
@@ -20,7 +19,7 @@ const Header = () => {
       <div className="app__wrapper_img">
         <img src={images.welcome} alt="baked salmon with lemon slices and herbs" />
       </div>
-    </div>
+    </section>
   )
 }
 
