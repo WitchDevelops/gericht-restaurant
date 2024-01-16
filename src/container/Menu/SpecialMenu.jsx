@@ -14,7 +14,7 @@ const SpecialMenu = () => {
         whileInView={{ y: [100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
       >
-        <Subheading title="Menu That Fits Your Palate" className="subheading" style="align-items: center" />
+        <Subheading title="Menu That Fits Your Palate" className="subheading" />
         <motion.h2
           className="headtext__cormorant"
           initial={{ opacity: 0 }}
