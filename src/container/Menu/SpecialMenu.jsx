@@ -2,36 +2,75 @@ import React from 'react';
 import { Subheading, MenuItem } from '../../components';
 import { data } from '../../constants';
 import { images } from '../../constants';
+import { motion } from 'framer-motion';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => {
   return (
     <section className="app__specialMenu app__wrapper section__padding" id="menu">
 
-      <div className="app__specialMenu--title">
+      <motion.div
+        className="app__specialMenu--title"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+      >
         <Subheading title="Menu That Fits Your Palate" className="subheading" />
-        <h1 className="headtext__cormorant">Today's Special</h1>
-      </div>
+        <motion.h1
+          className="headtext__cormorant"
+          initial={{ opacity: 0 }}
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Today's Special
+        </motion.h1>
+      </motion.div>
 
       <div className="app__specialMenu--menu">
         <div className="app__specialMenu--menu_wine">
-          <p className="app__specialMenu--menu_heading">Wine & Beer</p>
+          <motion.p
+            className="app__specialMenu--menu_heading"
+            initial={{ opacity: 0 }}
+            whileInView={{ y: [100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Wine & Beer
+          </motion.p>
           <div className="app__specialMenu--menu_items">
             {data.wines.map((wine, index) => (
-              <MenuItem key={wine.title + index} title={wine.title} price={wine.price} tags={wine.tags}/>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ y: [100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <MenuItem key={wine.title + index} title={wine.title} price={wine.price} tags={wine.tags} />
+              </motion.div>
+
             ))}
           </div>
         </div>
 
-        <div className="app__specialMenu--menu_img">
+        <motion.div
+          className="app__specialMenu--menu_img"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <img src={images.menu} alt="menu img" />
-        </div>
+        </motion.div>
 
         <div className="app__specialMenu--menu_cocktails">
-          <p className="app__specialMenu--menu_heading">Cocktails</p>
+          <motion.p className="app__specialMenu--menu_heading" initial={{ opacity: 0 }}
+            whileInView={{ y: [100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5, delay: 0.2 }}>Cocktails</motion.p>
           <div className="app__specialMenu--menu_items">
             {data.cocktails.map((cocktail, index) => (
-              <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
+              <motion.div initial={{ opacity: 0 }}
+                whileInView={{ y: [100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5, delay: 0.2 }}>
+                <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
+              </motion.div>
+
             ))}
           </div>
         </div>

@@ -19,6 +19,7 @@
 
 .app__header--p {
     text-transform: unset!important;
+    text-wrap: balance;
 }
 
 .header__wrapper--top {
