@@ -41,7 +41,7 @@ const Chef = () => {
           >
           <img className="app__chef-content__quote--img" src={images.quote} />
           <p className="app__chef-content__quote--text">
-            At Gericht, our commitment to culinary excellence is a relentless pursuit of perfection. I&nbsp;infuse every dish with  a harmonious blend of innovation and tradition, ensuring each plate tells a&nbsp;story of uncompromising quality that transcends the boundaries of ordinary dining.
+            At Gericht, our commitment to culinary excellence is a&nbsp;relentless pursuit of perfection. I&nbsp;infuse every dish with a&nbsp;harmonious blend of innovation and tradition, ensuring each plate tells a&nbsp;story of&nbsp;uncompromising quality that transcends the boundaries of ordinary dining.
           </p>
         </motion.div>
         <motion.div 
