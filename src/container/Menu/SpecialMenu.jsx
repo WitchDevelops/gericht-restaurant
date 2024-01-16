@@ -6,7 +6,7 @@ import './SpecialMenu.css';
 
 const SpecialMenu = () => {
   return (
-    <section className="app__specialMenu app__wrapper section__padding">
+    <section className="app__specialMenu app__wrapper section__padding" id="menu">
 
       <div className="app__specialMenu--title">
         <Subheading title="Menu That Fits Your Palate" className="subheading" />
@@ -40,7 +40,7 @@ const SpecialMenu = () => {
       <div>
         <button className="custom__button">View More</button>
       </div>
-      
+
     </section>
   )
 }

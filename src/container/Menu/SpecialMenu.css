@@ -62,8 +62,12 @@
   margin-block: 3rem;
   @media (min-width: 992px) {
     flex-grow: 3;
-  align-self: flex-end;
-  margin: unset;
-  max-width: unset;
+    align-self: flex-end;
+    margin: unset;
+    max-width: unset;
+    
+  }
+  @media (min-width: 1200px) {
+    width: 60%;
   }
 }
