@@ -3,6 +3,8 @@
 ## TODO 
 - [] sticky navbar
 - [] favicon
+- [] optimize images
+- [] fix the lorem ipsum in awards
 react router:
 - [] aboutus page
 - [] history page
