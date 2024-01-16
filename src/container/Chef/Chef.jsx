@@ -1,4 +1,3 @@
-import React from 'react';
 import { images } from '../../constants';
 import { Subheading } from '../../components';
 import { motion } from 'framer-motion';

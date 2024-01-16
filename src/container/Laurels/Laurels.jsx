@@ -1,4 +1,3 @@
-import React from 'react';
 import { images, data } from '../../constants';
 import { Subheading, AwardCard } from '../../components';
 import { motion } from 'framer-motion';

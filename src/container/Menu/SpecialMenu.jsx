@@ -1,4 +1,3 @@
-import React from 'react';
 import { Subheading, MenuItem } from '../../components';
 import { data } from '../../constants';
 import { images } from '../../constants';
