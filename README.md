@@ -2,6 +2,7 @@
 
 ## TODO 
 - [] sticky navbar
+- [] favicon
 react router:
 - [] aboutus page
 - [] history page
@@ -9,6 +10,14 @@ react router:
 
 ## Design 
 Design from [ui8.net](https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma)
+
+## Live
+
+Live website deployed with Netlify: [https://dining-gericht.netlify.app/](https://dining-gericht.netlify.app/)
+
+## Screenshots
+![Alt text](image.png)
+![Alt text](image-1.png)
 
 ## What I learned
 How to use the form library [react-hook-form](https://www.react-hook-form.com/get-started) to display form errors for client-side form validation and use uncontrolled input. It was also a great opportunity to practice implementing CSS-only slider (image gallery) and get a better feel for using [Framer Motion](https://www.framer.com/motion/) for animations.
