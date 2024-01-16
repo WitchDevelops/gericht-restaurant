@@ -1,7 +1,4 @@
-import React from 'react';
 import { FooterContent, Newsletter } from '../../components';
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
-
 import './Footer.css';
 
 const Footer = () => {
