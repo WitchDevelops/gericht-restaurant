@@ -1,0 +1,24 @@
+.app__contact--title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.app__contact--info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.app__contact--location {
+    color: var(--color-grey)!important;
+}
+
+.app__contact--hours {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.app__contact--text {
+    color: var(--color-golden)!important;
+}
