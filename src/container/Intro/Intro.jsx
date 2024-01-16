@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { video } from '../../constants';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 import './Intro.css';
@@ -6,7 +6,22 @@ import './Intro.css';
 const Intro = () => {
   const [playVideo, setPlayVideo] = useState(false);
   const [hovered, setHovered] = useState(false);
+  const [tapped, setTapped] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const vidRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the threshold as needed
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   // to toggle play/pause
   const handleVideo = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo);
@@ -16,11 +31,23 @@ const Intro = () => {
       vidRef.current.play();
     }
   }
+
+  const handleMobileVideoTap = () => {
+    setPlayVideo((prevPlayVideo) => !prevPlayVideo);
+    if (playVideo) {
+      vidRef.current.pause();
+    } else {
+      vidRef.current.play();
+    }
+  }
+
   return (
     <section
       className="app__video"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onTouchStart={() => setTapped(true)}
+      onTouchEnd={() => setTapped(false)}
     >
       <video
         src={video}
@@ -31,11 +58,11 @@ const Intro = () => {
         loop
       />
       {
-        (!playVideo && !hovered) && (
+        (!playVideo && (!hovered || !tapped)) && (
           <div className="app__video-overlay--pause flex__center">
             <div
               className="app__video-overlay__circle flex__center"
-              onClick={handleVideo}
+              onClick={isMobile ? handleMobileVideoTap : handleVideo}
             >
               <BsFillPlayFill color="#fff" fontSize={30} />
             </div>
@@ -43,8 +70,8 @@ const Intro = () => {
         )
 
       }
-      {
-        (!playVideo && hovered) && (
+       {
+        (!playVideo && hovered && !isMobile) && (
           <div className="app__video-overlay--pause flex__center">
             <div
               className="app__video-overlay__circle flex__center"
@@ -56,7 +83,7 @@ const Intro = () => {
         )
       }
       {
-        (playVideo && hovered) && (
+        (playVideo && hovered && !isMobile) && (
           <div className="app__video-overlay--play flex__center">
             <div
               className="app__video-overlay__circle flex__center"
@@ -67,6 +94,19 @@ const Intro = () => {
           </div>
         )
       }
+      {
+        (playVideo && tapped && isMobile) && (
+          <div className="app__video-overlay--play flex__center">
+            <div
+              className="app__video-overlay__circle flex__center"
+              onClick={handleMobileVideoTap}
+            >
+              <BsPauseFill color="#fff" fontSize={30} />
+            </div>
+          </div>
+        )
+      }
+
 
     </section>
   )
