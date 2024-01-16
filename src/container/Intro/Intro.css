@@ -1,7 +1,7 @@
 .app__video {
-  width: 100vw;
   position: relative;
   aspect-ratio: 16/9;
+  background-color: #000;
 }
 .app__video video {
   object-fit: cover;

@@ -1,0 +1,48 @@
+.app__laurels_wrapper {
+  position: relative;
+}
+.app__laurels_logo {
+  position: absolute;
+  max-width: 100px;
+  top: 40px;
+  right: 40px;
+  @media (min-width: 992px) {
+    max-width: 146px;
+  }
+  @media (min-width: 1200px) {
+    top: 55px;
+    left: 63px;
+  }
+}
+.app__laurels {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.app__laurels_heading {
+  margin-bottom: 64px;
+  margin-top: 8px;
+}
+
+.app__laurels_awards {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 32px;
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 64px;
+  }
+}
+
+.app__laurels_img {
+  max-width: 80%;
+  @media (min-width: 1200px) {
+    max-width: 60%;
+  }
+}

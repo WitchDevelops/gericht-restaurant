@@ -1,0 +1,25 @@
+.awards-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.awards-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.awards-card__img {
+    width: 80px;
+    height: 80px;
+}
+
+.awards-card__content .awards-card__title {
+    color: var(--color-golden);
+}
+
+.awards-card__content .awards-card__subtitle {
+    color: var(--color-grey);
+}
