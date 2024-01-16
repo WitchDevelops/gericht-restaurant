@@ -39,11 +39,12 @@ const SpecialMenu = () => {
           <div className="app__specialMenu--menu_items">
             {data.wines.map((wine, index) => (
               <motion.div
+                key={`${wine.title}-${index}`}
                 initial={{ opacity: 0 }}
                 whileInView={{ y: [100, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <MenuItem key={wine.title + index} title={wine.title} price={wine.price} tags={wine.tags} />
+                <MenuItem title={wine.title} price={wine.price} tags={wine.tags} />
               </motion.div>
 
             ))}
@@ -63,14 +64,16 @@ const SpecialMenu = () => {
           <motion.h3 className="app__specialMenu--menu_heading" initial={{ opacity: 0 }}
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.5, delay: 0.2 }}>
-              Cocktails
-              </motion.h3>
+            Cocktails
+          </motion.h3>
           <div className="app__specialMenu--menu_items">
             {data.cocktails.map((cocktail, index) => (
-              <motion.div initial={{ opacity: 0 }}
+              <motion.div
+                key={`${cocktail.title}-${index}`}
+                initial={{ opacity: 0 }}
                 whileInView={{ y: [100, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.5, delay: 0.2 }}>
-                <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
+                <MenuItem title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
               </motion.div>
 
             ))}
