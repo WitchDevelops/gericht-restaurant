@@ -15,27 +15,27 @@ const SpecialMenu = () => {
         whileInView={{ y: [100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
       >
-        <Subheading title="Menu That Fits Your Palate" className="subheading" />
-        <motion.h1
+        <Subheading title="Menu That Fits Your Palate" className="subheading" style="align-items: center" />
+        <motion.h2
           className="headtext__cormorant"
           initial={{ opacity: 0 }}
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           Today's Special
-        </motion.h1>
+        </motion.h2>
       </motion.div>
 
       <div className="app__specialMenu--menu">
         <div className="app__specialMenu--menu_wine">
-          <motion.p
+          <motion.h3
             className="app__specialMenu--menu_heading"
             initial={{ opacity: 0 }}
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Wine & Beer
-          </motion.p>
+          </motion.h3>
           <div className="app__specialMenu--menu_items">
             {data.wines.map((wine, index) => (
               <motion.div
@@ -60,9 +60,11 @@ const SpecialMenu = () => {
         </motion.div>
 
         <div className="app__specialMenu--menu_cocktails">
-          <motion.p className="app__specialMenu--menu_heading" initial={{ opacity: 0 }}
+          <motion.h3 className="app__specialMenu--menu_heading" initial={{ opacity: 0 }}
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5, delay: 0.2 }}>Cocktails</motion.p>
+            transition={{ duration: 0.5, delay: 0.2 }}>
+              Cocktails
+              </motion.h3>
           <div className="app__specialMenu--menu_items">
             {data.cocktails.map((cocktail, index) => (
               <motion.div initial={{ opacity: 0 }}

@@ -1,0 +1,45 @@
+.app__wrapper_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.app__chef-content__quote--img {
+  height: 1.75em;
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+.app__chef-content__quote--text {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+
+.app__chef-sign__name {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.app__chef-sign__role {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-top: 0.5em;
+}
+
+.app__chef-sign__img {
+    max-width: 250px;
+}

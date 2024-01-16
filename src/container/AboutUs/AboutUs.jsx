@@ -21,7 +21,7 @@ const AboutUs = () => {
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h1 className="headtext__cormorant">About Us</h1>
+            <h2 className="headtext__cormorant">About Us</h2>
             <img src={images.spoon} alt="" />
           </motion.div>
 
@@ -59,7 +59,7 @@ const AboutUs = () => {
             initial={{ opacity: 0 }}
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.5, delay: 0.2 }}>
-            <h1 className="headtext__cormorant">Our History</h1>
+            <h2 className="headtext__cormorant">Our History</h2>
             <img src={images.spoon} alt="" />
           </motion.div>
 
