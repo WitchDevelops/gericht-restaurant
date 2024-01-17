@@ -35,3 +35,12 @@ How to use the form library [react-hook-form](https://www.react-hook-form.com/ge
 
 ## Thanks
 I have used this great [tutorial](https://www.youtube.com/watch?v=4oV65GVVits&ab_channel=JavaScriptMastery) as the starting point for this project.
+
+## Optimization:
+
+From 
+
+![Alt text](image-2.png) on mobile and ![Alt text](image-3.png) on desktop
+to
+
+![Alt text](image-4.png) on mobile and ![Alt text](image-5.png) on desktop

@@ -45,7 +45,7 @@ const Header = () => {
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         >
-        <img src={images.welcome} alt="baked salmon with lemon slices and herbs" />
+        <img src={images.welcome} alt="baked salmon with lemon slices and herbs" fetchpriority="high" />
       </motion.div>
     </section>
   )
