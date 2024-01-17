@@ -52,6 +52,7 @@ const Newsletter = () => {
         ) : (
 
           <motion.form
+            netlify
             className="app__newsletter--form"
             onSubmit={handleSubmit(onSubmit)}
             initial={{ opacity: 0 }}
