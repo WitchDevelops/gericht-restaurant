@@ -1,15 +1,5 @@
 # About
-It's a home page for a high-end restaurant. It features a full-screen video with custom controls, image gallery slider made with pure CSS, and a newsletter subscription form made with reac-hook-form library.
-
-## TODO 
-- [] sticky navbar
-- [x] favicon
-- [x] optimize images
-- [x] fix the lorem ipsum in awards
-react router:
-- [] aboutus page
-- [] history page
-- [] menu page
+It's a home page for a high-end restaurant. It features a full-screen video with custom controls, image gallery slider made with pure CSS, and a newsletter subscription form made with react-hook-form library.
 
 ## Tech
 
