@@ -12,8 +12,12 @@
 }
 
 .awards-card__img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+    @media (min-width: 1200px) {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .awards-card__content .awards-card__title {
