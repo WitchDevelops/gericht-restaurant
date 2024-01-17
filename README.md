@@ -2,7 +2,7 @@
 
 ## TODO 
 - [] sticky navbar
-- [] favicon
+- [x] favicon
 - [x] optimize images
 - [x] fix the lorem ipsum in awards
 react router:
