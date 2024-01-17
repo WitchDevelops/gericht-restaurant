@@ -38,9 +38,28 @@ I have used this great [tutorial](https://www.youtube.com/watch?v=4oV65GVVits&ab
 
 ## Optimization:
 
+### Desktop
+
 From 
 
-![Alt text](image-2.png) on mobile and ![Alt text](image-3.png) on desktop
+![Alt text](image-3.png) 
+
 to
 
-![Alt text](image-4.png) on mobile and ![Alt text](image-5.png) on desktop
+![Alt text](image-8.png)
+
+### Mobile
+
+From 
+
+![Alt text](image-2.png)
+
+to
+
+![Alt text](image-7.png)
+
+### What helped the most
+Resizing images, changing format to .webp, compressing them and lazy loading images under the fold.
+
+### What could also help
+Preloading the first image.
