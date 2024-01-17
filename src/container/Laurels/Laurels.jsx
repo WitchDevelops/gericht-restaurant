@@ -51,7 +51,7 @@ const Laurels = () => {
           whileInView={{ y: [0, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
         >
-          <img src={images.laurels} alt="Juicy steak" />
+          <img src={images.laurels} alt="Juicy steak with asparagus and herbs" loading="lazy" />
         </motion.div>
       </div>
     </section>

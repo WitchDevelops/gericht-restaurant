@@ -56,7 +56,7 @@ const SpecialMenu = () => {
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <img src={images.menu} alt="menu img" />
+          <img src={images.menu} alt="cocktail shaker with half a lemon" loading="lazy"/>
         </motion.div>
 
         <div className="app__specialMenu--menu_cocktails">

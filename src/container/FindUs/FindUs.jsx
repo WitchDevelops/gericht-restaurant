@@ -63,7 +63,7 @@ const FindUs = () => {
         whileInView={{ y: [0, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <img src={images.findus} />
+        <img src={images.findus} alt="cold sparkling drink with a slice of lemon and lime in a tall, etched glass" loading="lazy"/>
       </motion.div>
     </section>
   )

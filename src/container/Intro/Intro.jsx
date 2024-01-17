@@ -56,6 +56,7 @@ const Intro = () => {
         controls={false}
         muted
         loop
+        loading="lazy"
       />
       {
         (!playVideo && (!hovered || !tapped)) && (

@@ -10,7 +10,7 @@ const AboutUs = () => {
         initial={{ opacity: 0 }}
         whileInView={{ y: [0, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}>
-        <img src={images.G} alt="" />
+        <img src={images.G} alt="" loading="lazy"/>
       </motion.div>
       <div className="app__aboutus--content flex__center flex__column">
         <div className="app__aboutus--content_about">
@@ -49,7 +49,7 @@ const AboutUs = () => {
           initial={{ opacity: 0 }}
           whileInView={{ y: [0, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}>
-          <img src={images.knife} alt="" />
+          <img src={images.knife} alt="" loading="lazy" />
         </motion.div>
 
         <div className="app__aboutus--content_history">
